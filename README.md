@@ -1,27 +1,70 @@
-# StylesThemes
+#Styles themes example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
+## Documentation
+### Why is it necessary
+A limited palette is what modern design requires.
+This pattern allows you to switch the palette at runtime. Save the desired one in local storage.
+All participants in the development know what color to take from the palette for each case.
+Any module can be easily moved to other projects as uses the !default key in variables.
+Any color can be quickly changed.
+Random colors will not appear in the project
 
-## Development server
+## Files
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The color palette is saved in the _colors file
 
-## Code scaffolding
+```
+src/styles/_colors.scss
+```
+To change this file, you need a very good reason. Try to avoid adding a new color.
+The palette is built from design. Usually this is a very limited number of colors.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Each component in the component folder must contain variables with all their colors
+with flag !default
 
-## Build
+Example:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+src/styles/components/header.scss
+```
 
-## Running unit tests
+```
+$header-back: #25333d !default;
+$header-color: #E9ECEF !default;
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+.header {
+  background: $header-back;
+  color: $header-color;
+  display: flex;
+  padding: .2rem;
+  height: 3rem;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-## Running end-to-end tests
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+All variables from these files are copied to _variables
+Each variable is assigned a variable from the palette from the src / styles / _colors.scss file
 
-## Further help
+Example:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+$header-back: $invert-main;
+$header-color: $invert-typography-3;
+
+$layout-back: $background-border-2;
+$layout-color: $typography-2;
+
+$team-info-back: $invert-main;
+$team-info-color: $invert-typography-3;
+
+$btn-primary-back: $button-info;
+$btn-primary-border-color: $button-info;
+$btn-primary-color: $invert-typography-4;
+
+```
+
+If you need to add a new variable to the palette. That will have to update ThemeInterface
+and all files from the src / app / themes folder.
