@@ -1,0 +1,14 @@
+$layout-back: #FAFAFA !default;
+$layout-color: #565656 !default;
+
+.layout {
+  background: $layout-back;
+  color: $layout-color;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  &__content {
+    padding: .5rem;
+  }
+}

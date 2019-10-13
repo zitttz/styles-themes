@@ -1,0 +1,35 @@
+$btn-primary-back: #49AFD9 !default;
+$btn-primary-border-color: #49AFD9 !default;
+$btn-primary-color: #000000 !default;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  appearance: none !important;
+  border-radius: 0.125rem;
+  border: 1px solid;
+  min-width: 3rem;
+  max-width: 20rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 1.5rem;
+  letter-spacing: 0.12em;
+  font-size: 0.5rem;
+  font-weight: 500;
+  height: 1.5rem;
+  padding: 0 0.5rem;
+  outline: none;
+
+  &_primary {
+    border-color: $btn-primary-border-color;
+    background-color: $btn-primary-back;
+    color: $btn-primary-color;
+  }
+}

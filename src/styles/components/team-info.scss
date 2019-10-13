@@ -1,0 +1,9 @@
+$team-info-back: #25333d !default;
+$team-info-color: #E9ECEF !default;
+
+.team-info {
+  &__header {
+    background: $team-info-back;
+    color: $team-info-color;
+  }
+}

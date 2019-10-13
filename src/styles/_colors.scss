@@ -1,0 +1,74 @@
+$background-border-1: var(--background-border-1, #ffffff);
+$background-border-2: var(--background-border-2, #FAFAFA);
+$background-border-3: var(--background-border-3, #EEEEEE);
+$background-border-4: var(--background-border-4, #DDDDDD);
+$background-border-5: var(--background-border-5, #CCCCCC);
+$background-border-6: var(--background-border-6, #9A9A9A);
+
+$row-hover-background: var(--row-hover-background, #EEEEEE);
+$row-selection-background: var(--row-selection-background, #D9E4EA);
+
+$typography-1: var(--typography-1, #737373);
+$typography-2: var(--typography-2, #565656);
+$typography-3: var(--typography-3, #313131);
+$typography-4: var(--typography-4, #000000);
+
+$shadow-1: var(--shadow-1, rgba(0, 0, 0, .1));
+$shadow-2: var(--shadow-2, rgba(0, 0, 0, .2));
+$shadow-3: var(--shadow-3, rgba(0, 0, 0, .3));
+$shadow-4: var(--shadow-4, rgba(0, 0, 0, .4));
+$shadow-5: var(--shadow-5, rgba(0, 0, 0, .5));
+$shadow-6: var(--shadow-6, rgba(0, 0, 0, .6));
+$shadow-7: var(--shadow-7, rgba(0, 0, 0, .7));
+$shadow-8: var(--shadow-8, rgba(0, 0, 0, .8));
+
+$button-info: var(--button-info, #0079B8);
+$button-danger: var(--button-danger, #C92100);
+$button-warning: var(--button-warning, #C25400);
+$button-success: var(--button-success, #2F8400);
+$button-default: var(--button-default, #CCCCCC);
+$button-create: var(--button-create, #dad12d);
+
+$alert-info: var(--alert-info, #C8E9F4);
+$alert-danger: var(--alert-danger, #F4BCBC);
+$alert-warning: var(--alert-warning, #FBE9BF);
+$alert-success: var(--alert-success, #D4F6C0);
+$alert-default: var(--alert-default, #DDDDDD);
+
+$invert-main: var(--invert-main, #25333d);
+
+$invert-background-border-1: var(--invert-background-border-1, #0F171C);
+$invert-background-border-2: var(--invert-background-border-2, #17242B);
+$invert-background-border-3: var(--invert-background-border-3, #22343C);
+$invert-background-border-4: var(--invert-background-border-4, #485764);
+$invert-background-border-5: var(--invert-background-border-5, #566572);
+$invert-background-border-6: var(--invert-background-border-6, #6D7884);
+
+$invert-row-hover-background: var(--invert-row-hover-background, #29414E);
+$invert-row-selection-background: var(--invert-row-selection-background, #324F61);
+
+$invert-typography-1: var(--invert-typography-1, #8F9BA3);
+$invert-typography-2: var(--invert-typography-2, #ADBBC4);
+$invert-typography-3: var(--invert-typography-3, #E9ECEF);
+$invert-typography-4: var(--invert-typography-4, #FFFFFF);
+
+$invert-shadow-1: var(--invert-shadow-1, rgba(255, 255, 255, .1));
+$invert-shadow-2: var(--invert-shadow-2, rgba(255, 255, 255, .2));
+$invert-shadow-3: var(--invert-shadow-3, rgba(255, 255, 255, .3));
+$invert-shadow-4: var(--invert-shadow-4, rgba(255, 255, 255, .4));
+$invert-shadow-5: var(--invert-shadow-5, rgba(255, 255, 255, .5));
+$invert-shadow-6: var(--invert-shadow-6, rgba(255, 255, 255, .6));
+$invert-shadow-7: var(--invert-shadow-7, rgba(255, 255, 255, .7));
+$invert-shadow-8: var(--invert-shadow-8, rgba(255, 255, 255, .8));
+
+$invert-button-info: var(--invert-button-info, #49AFD9);
+$invert-button-danger: var(--invert-button-danger, #F54F47);
+$invert-button-warning: var(--invert-button-warning, #FDD006);
+$invert-button-success: var(--invert-button-success, #60B515);
+$invert-button-default: var(--invert-button-default, #6D7884);
+
+$invert-alert-info: var(--invert-alert-info, #0F6082);
+$invert-alert-danger: var(--invert-alert-danger, #882D31);
+$invert-alert-warning: var(--invert-alert-warning, #7F6509);
+$invert-alert-success: var(--invert-alert-success, #205522);
+$invert-alert-default: var(--invert-alert-default, #6D7884);

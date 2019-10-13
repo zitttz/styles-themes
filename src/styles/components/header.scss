@@ -1,0 +1,13 @@
+$header-back: #25333d !default;
+$header-color: #E9ECEF !default;
+
+.header {
+  background: $header-back;
+  color: $header-color;
+  display: flex;
+  padding: .2rem;
+  height: 3rem;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
